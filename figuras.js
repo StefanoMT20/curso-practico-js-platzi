@@ -35,12 +35,24 @@ function areaTriangulo(baseTriangulo, alturaTriangulo){
    return (baseTriangulo * alturaTriangulo)/2;
    console.log(`El área del Triangulo es: ${areaTriangulo} cm2`);
 } 
-
+function alturaTrianguloIso(ladoTriangulo1, ladoTriangulo2, base){
+    if (ladoTriangulo1 != ladoTriangulo2){
+        alert("error, tiene que ser un triangulo iso")
+    }
+    else{
+        
+        return respuesta = Math.sqrt(ladoTriangulo1**2 - (base**2/4))
+        alert("a")
+    }
+}
 console.groupEnd();
 
 //Circunferencia
 console.group("Circulo")
 const PI = Math.PI;
+function diametroCirculo(radio){
+    return radio *2;
+}
 
 function perimetroCirculo(diametroCirculo){
     return diametroCirculo * PI;
